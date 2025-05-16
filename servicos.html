@@ -2,13 +2,71 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Serviços - ISA RECEITAS</title>
+    <title>Serviços - Nossa Cozinha</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .servicos-wrapper {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            background-color: #fceeff;
+            border-radius: 20px;
+            margin: 40px auto;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(139, 0, 139, 0.2);
+        }
+
+        .card-servico {
+            flex: 1;
+            background: #fff0fc;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: #2c003e;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card-servico:hover {
+            transform: scale(1.05);
+        }
+
+        .card-servico h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-servico p {
+            font-size: 16px;
+        }
+
+        .card-servico ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-servico li::before {
+            content: "✔️ ";
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #eee;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Nossos Serviços</h1>
-        <p>O que oferecemos além das receitas</p>
+        <h1>✨ Nossos Serviços</h1>
+        <p>Mais do que receitas — oferecemos experiências completas!</p>
     </header>
 
     <nav>
@@ -19,23 +77,41 @@
         <button><a href="faleconosco.html">Fale Conosco</a></button>
     </nav>
 
-    <div class="conteudo">
-        <div class="esquerda">
-            <h3>Consultoria</h3>
-            <p>Te ajudamos a montar seu cardápio.</p>
+    <section class="servicos-wrapper">
+        <div class="card-servico">
+            <h3>🧑‍🍳 Consultoria Gastronômica</h3>
+            <p>Receba apoio personalizado na criação do seu cardápio.</p>
+            <ul>
+                <li>Menus semanais equilibrados</li>
+                <li>Orientações para dietas específicas</li>
+                <li>Dicas de apresentação de pratos</li>
+            </ul>
         </div>
-        <div class="centro">
-            <h3>Aulas online</h3>
-            <p>Receitas passo a passo com vídeos e dicas práticas.</p>
-        </div>
-        <div class="direita">
-            <h3>Parcerias</h3>
-            <p>Trabalhamos com marcas locais para trazer o melhor.</p>
-        </div>
-    </div>
 
-    <footer>
-        <p>ISA RECEITAS — Cozinhando com você</p>
+        <div class="card-servico">
+            <h3>🎥 Aulas Online Exclusivas</h3>
+            <p>Aprenda do básico ao avançado com nossos vídeos passo a passo.</p>
+            <ul>
+                <li>Acesso vitalício aos cursos</li>
+                <li>Grupo exclusivo para dúvidas</li>
+                <li>Certificado ao final de cada módulo</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <h3>🤝 Parcerias e Eventos</h3>
+            <p>Colabore com marcas locais e participe de eventos gastronômicos.</p>
+            <ul>
+                <li>Feiras e workshops</li>
+                <li>Degustações ao vivo</li>
+                <li>Divulgação de pequenos negócios</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="titulo">
+        <h2 class="titulo-principal">Nossa Cozinha</h2>
+        <p class="subtitulo">Com amor e sabor, Nossa Cozinha te ajuda a brilhar na cozinha!</p>
     </footer>
 </body>
 </html>

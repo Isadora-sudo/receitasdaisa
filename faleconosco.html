@@ -2,13 +2,62 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Fale Conosco - ISA RECEITAS</title>
+    <title>Fale Conosco - Nossa Cozinha</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .formulario-contato input,
+        .formulario-contato textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .formulario-contato button {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .formulario-contato button:hover {
+            background-color: #9932cc;
+        }
+
+        .esquerda, .direita {
+            background-color: #2f2f2f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .centro {
+            background: linear-gradient(to bottom, #e9d2ff, #f9eaff);
+            color: #000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .centro h3 {
+            font-size: 24px;
+            color: #4b0082;
+        }
+
+        .centro form {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Fale Conosco</h1>
-        <p>Mande uma mensagem para nós</p>
+        <h1>📨 Fale Conosco</h1>
+        <p>Envie suas ideias, elogios ou dúvidas. Estamos aqui para você!</p>
     </header>
 
     <nav>
@@ -21,26 +70,29 @@
 
     <div class="conteudo">
         <div class="esquerda">
-            <h3>Quer sugerir uma receita?</h3>
-            <p>Entre em contato e envie sua dica especial.</p>
+            <h3>📬 Tem uma receita especial?</h3>
+            <p>Compartilhe com a gente! Seu toque pode aparecer em destaque no nosso site.</p>
         </div>
+
         <div class="centro">
-            <h3>Formulário Simples</h3>
-            <form>
-                <input type="text" placeholder="Seu nome" style="width: 90%; padding: 10px;"><br><br>
-                <input type="email" placeholder="Seu email" style="width: 90%; padding: 10px;"><br><br>
-                <textarea placeholder="Sua mensagem" rows="5" style="width: 90%; padding: 10px;"></textarea><br><br>
+            <h3>💬 Envie sua mensagem</h3>
+            <form class="formulario-contato">
+                <input type="text" placeholder="Seu nome" required><br>
+                <input type="email" placeholder="Seu email" required><br>
+                <textarea placeholder="Sua mensagem" rows="5" required></textarea><br>
                 <button type="submit">Enviar</button>
             </form>
         </div>
+
         <div class="direita">
-            <h3>Feedback</h3>
-            <p>Adoramos ouvir histórias de quem cozinhou com nossas receitas.</p>
+            <h3>🧡 Feedback é tudo</h3>
+            <p>Nos conte como foi cozinhar com a gente. Queremos saber da sua experiência!</p>
         </div>
     </div>
 
-    <footer>
-        <p>ISA RECEITAS — Sua opinião é importante</p>
+    <footer class="titulo">
+        <h2 class="titulo-principal">Nossa Cozinha</h2>
+        <p class="subtitulo">Fale com quem entende de sabor e carinho.</p>
     </footer>
 </body>
 </html>

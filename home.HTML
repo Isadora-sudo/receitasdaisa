@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <title>Home - ISA RECEITAS</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(to bottom, #fff0fb, #fceeff);
+            border-radius: 20px;
+            margin: 40px auto;
+            width: 85%;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.15);
+        }
+
+        .blocos-home {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card-home {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card-home:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-home h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #4b0082;
+        }
+
+        .card-home p {
+            font-size: 15px;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ISA RECEITAS</h1>
-        <p>As receitas mais gostosas</p>
+        <h1>🍰 Nossa Cozinha</h1>
+        <p>As receitas mais gostosas direto da nossa cozinha para a sua!</p>
     </header>
 
     <nav>
@@ -20,13 +67,28 @@
     </nav>
 
     <main>
-        <h2>Bem-vindo à Home!</h2>
-        <p>Explore nossas receitas e vídeos exclusivos.</p>
+        <h2>👩‍🍳 Bem-vindo à ISA RECEITAS!</h2>
+        <p>Descubra um mundo de sabores com nossas receitas fáceis, vídeos explicativos e muito carinho em cada passo.</p>
+
+        <div class="blocos-home">
+            <div class="card-home">
+                <h3>📹 Vídeos Tutoriais</h3>
+                <p>Aprenda passo a passo com vídeos didáticos e dicas de ouro.</p>
+            </div>
+            <div class="card-home">
+                <h3>🧾 Receitas Testadas</h3>
+                <p>Receitas aprovadas por quem ama cozinhar. Tudo explicado de forma clara.</p>
+            </div>
+            <div class="card-home">
+                <h3>🌟 Destaques da Semana</h3>
+                <p>Veja as receitas mais acessadas e ganhe inspiração para o dia a dia!</p>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <h2>Rodapé</h2>
-        <p>A Isadora vai ajudar você</p>
+    <footer class="titulo">
+        <h2 class="titulo-principal">Nossa Cozinha</h2>
+        <p class="subtitulo">Com amor e sabor, Nossa cozinha te ajuda a brilhar na cozinha!</p>
     </footer>
 </body>
 </html>

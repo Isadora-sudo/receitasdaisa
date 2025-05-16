@@ -88,11 +88,93 @@ footer {
     background-color: #1a1a1a;
 }
 
-.banner-img {
+.titulo {
+    text-align: center;
+    background-color: #e6d6f4; /* fundo lavanda */
+    padding: 20px 0;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 20px; /* bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra leve opcional */
+}
+
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+}
+
+.subtitulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+}
+
+/* Fundo rosa claro para o body */
+body {
+    background-color: #fbe4f1; /* Rosa meio esbranquiçado */
+}
+
+/* Espaçamento entre as seções */
+.conteudo {
+    gap: 30px; /* Espaço entre esquerda, centro e direita */
+    padding: 20px;
+}
+
+/* Tamanho uniforme das imagens */
+.esquerda img,
+.direita img {
     width: 100%;
-    height: 150px; /* Altura fixa para parecer com sua imagem */
-    object-fit: cover; /* Corta o excesso e mantém o preenchimento */
-    display: block;
-    border-bottom: 2px solid #ba55d3; /* opcional: igual à borda do nav */
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Rodapé estilizado igual ao banner */
+.rodape-estilizado {
+    background-color: #e6d6f4; /* mesmo fundo da .titulo */
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rodape-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+}
+
+.rodape-subtitulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #000;
+    margin: 10px 0 0 0;
+}
+
+/* Estilo lavanda igual ao banner para os botões do menu */
+nav button {
+    background-color: #e6d6f4; /* lavanda claro */
+    color: #000; /* texto preto */
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #d8bff0;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
