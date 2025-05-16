@@ -1,5 +1,8 @@
+/* Fonte mais arredondada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: #0a0a0a;
@@ -21,16 +24,19 @@ nav {
     background-color: #1e1e1e;
 }
 
+/* Borda arredondada nos botões */
 nav button {
     background: #2e2e2e;
     border: 1px solid #9370db;
     padding: 10px;
+    border-radius: 12px;
 }
 
 nav a {
     text-decoration: none;
     color: #dda0dd;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav a:hover {
@@ -44,9 +50,11 @@ nav a:hover {
     background-color: #121212;
 }
 
+/* Borda arredondada nas seções */
 .esquerda, .centro, .direita {
     padding: 20px;
     color: #fff;
+    border-radius: 15px;
 }
 
 .esquerda {
@@ -66,6 +74,11 @@ nav a:hover {
     width: 25%;
     border: 2px solid #9400d3;
     background-color: #2b2b2b;
+}
+
+/* Deixa as imagens e o vídeo com borda arredondada */
+img, iframe {
+    border-radius: 12px;
 }
 
 footer {
