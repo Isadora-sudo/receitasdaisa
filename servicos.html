@@ -25,6 +25,8 @@
             color: #2c003e;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            overflow-y: auto;
+            max-height: 500px;
         }
 
         .card-servico:hover {
@@ -38,11 +40,15 @@
 
         .card-servico p {
             font-size: 16px;
+            margin-bottom: 15px;
         }
 
         .card-servico ul {
             list-style: none;
             padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 280px;
         }
 
         .card-servico li::before {
@@ -56,6 +62,7 @@
         header p {
             font-size: 18px;
             color: #eee;
+            margin-bottom: 40px;
         }
 
         footer {
@@ -79,13 +86,37 @@
 
     <section class="servicos-wrapper">
         <div class="card-servico">
-            <h3>🧑‍🍳 Consultoria Gastronômica</h3>
-            <p>Receba apoio personalizado na criação do seu cardápio.</p>
+            <h3>🍲 Receita: Strogonoff de Frango</h3>
+            <p>Uma receita prática e deliciosa para o dia a dia.</p>
             <ul>
-                <li>Menus semanais equilibrados</li>
-                <li>Orientações para dietas específicas</li>
-                <li>Dicas de apresentação de pratos</li>
+                <li>500g de peito de frango em cubos</li>
+                <li>1 cebola média picada</li>
+                <li>2 dentes de alho amassados</li>
+                <li>200g de creme de leite</li>
+                <li>3 colheres de sopa de ketchup</li>
+                <li>1 colher de sopa de mostarda</li>
+                <li>Sal e pimenta a gosto</li>
+                <li>Óleo para refogar</li>
             </ul>
+            <p><strong>Modo de preparo:</strong><br>
+            Refogue a cebola e o alho no óleo. Acrescente o frango até dourar. Adicione ketchup, mostarda, sal e pimenta. Cozinhe por 10 minutos, depois misture o creme de leite e sirva com arroz branco.</p>
+        </div>
+
+        <div class="card-servico">
+            <h3>🥩 Receita Requintada: Filé ao Molho Madeira</h3>
+            <p>Um prato sofisticado para impressionar em ocasiões especiais.</p>
+            <ul>
+                <li>4 filés mignon</li>
+                <li>200ml de vinho Madeira</li>
+                <li>150g de champignon fatiado</li>
+                <li>1 colher de sopa de manteiga</li>
+                <li>1 dente de alho picado</li>
+                <li>Sal e pimenta do reino a gosto</li>
+                <li>2 colheres de sopa de farinha de trigo</li>
+                <li>1 xícara de caldo de carne</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong><br>
+            Tempere os filés com sal e pimenta. Sele em manteiga até dourar. Reserve. Na mesma panela, refogue o alho, acrescente champignon, farinha e misture. Adicione o vinho Madeira e o caldo de carne, mexa até engrossar. Volte os filés para o molho e sirva com purê de batatas.</p>
         </div>
 
         <div class="card-servico">
@@ -95,16 +126,6 @@
                 <li>Acesso vitalício aos cursos</li>
                 <li>Grupo exclusivo para dúvidas</li>
                 <li>Certificado ao final de cada módulo</li>
-            </ul>
-        </div>
-
-        <div class="card-servico">
-            <h3>🤝 Parcerias e Eventos</h3>
-            <p>Colabore com marcas locais e participe de eventos gastronômicos.</p>
-            <ul>
-                <li>Feiras e workshops</li>
-                <li>Degustações ao vivo</li>
-                <li>Divulgação de pequenos negócios</li>
             </ul>
         </div>
     </section>
