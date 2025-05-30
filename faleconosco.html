@@ -52,6 +52,15 @@
         footer {
             margin-top: 30px;
         }
+
+        .erro {
+            color: red;
+            font-size: 12px;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
@@ -77,9 +86,22 @@
         <div class="centro">
             <h3>💬 Envie sua mensagem</h3>
             <form class="formulario-contato">
-                <input type="text" placeholder="Seu nome" required><br>
-                <input type="email" placeholder="Seu email" required><br>
-                <textarea placeholder="Sua mensagem" rows="5" required></textarea><br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+                <span id="nome-error" class="erro"></span><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email">
+                <span id="email-error" class="erro"></span><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="Seu telefone">
+                <span id="telefone-error" class="erro"></span><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Sua mensagem" rows="5"></textarea>
+                <span id="mensagem-error" class="erro"></span><br>
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -96,3 +118,4 @@
     </footer>
 </body>
 </html>
+
