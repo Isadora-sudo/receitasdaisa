@@ -5,8 +5,50 @@
     <title>Serviços - Nossa Cozinha</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f9eaff, #e9d2ff);
+            margin: 0;
+            padding: 0;
+            color: #2c003e;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #4b0082;
+            margin-top: 30px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #800080;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #9932cc;
+        }
+
         .servicos-wrapper {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             padding: 30px;
             background-color: #fceeff;
@@ -17,29 +59,28 @@
         }
 
         .card-servico {
-            flex: 1;
-            background: #fff0fc;
+            background: #fff;
             padding: 20px;
             border-radius: 15px;
             text-align: center;
             color: #2c003e;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            overflow-y: auto;
-            max-height: 500px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .card-servico:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(139, 0, 139, 0.3);
         }
 
         .card-servico h3 {
-            font-size: 24px;
+            font-size: 22px;
             margin-bottom: 10px;
         }
 
         .card-servico p {
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 15px;
         }
 
@@ -47,30 +88,48 @@
             list-style: none;
             padding: 0;
             text-align: left;
-            margin: 0 auto;
-            max-width: 280px;
+            margin: 0 auto 10px;
+            max-width: 250px;
         }
 
         .card-servico li::before {
-            content: "✔️ ";
+            content: "🍽️ ";
         }
 
-        header h1 {
-            font-size: 36px;
+        .decoracao {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 24px;
+            opacity: 0.3;
         }
 
-        header p {
-            font-size: 18px;
-            color: #eee;
-            margin-bottom: 40px;
+        .botao-mais {
+            display: block;
+            margin: 30px auto;
+            background-color: #800080;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao-mais:hover {
+            background-color: #9932cc;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 50px;
+            text-align: center;
+            color: #555;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>✨ Nossos Serviços</h1>
         <p>Mais do que receitas — oferecemos experiências completas!</p>
@@ -86,53 +145,81 @@
 
     <section class="servicos-wrapper">
         <div class="card-servico">
-            <h3>🍲 Receita: Strogonoff de Frango</h3>
-            <p>Uma receita prática e deliciosa para o dia a dia.</p>
+            <div class="decoracao">🍰</div>
+            <h3>🍰 Bolo de Cenoura com Cobertura</h3>
+            <p>Clássico e irresistível para adoçar seus dias.</p>
             <ul>
-                <li>500g de peito de frango em cubos</li>
-                <li>1 cebola média picada</li>
-                <li>2 dentes de alho amassados</li>
-                <li>200g de creme de leite</li>
-                <li>3 colheres de sopa de ketchup</li>
-                <li>1 colher de sopa de mostarda</li>
-                <li>Sal e pimenta a gosto</li>
-                <li>Óleo para refogar</li>
+                <li>3 cenouras médias</li>
+                <li>4 ovos</li>
+                <li>2 xícaras de açúcar</li>
+                <li>1/2 xícara de óleo</li>
+                <li>2 xícaras de farinha de trigo</li>
             </ul>
-            <p><strong>Modo de preparo:</strong><br>
-            Refogue a cebola e o alho no óleo. Acrescente o frango até dourar. Adicione ketchup, mostarda, sal e pimenta. Cozinhe por 10 minutos, depois misture o creme de leite e sirva com arroz branco.</p>
         </div>
 
         <div class="card-servico">
-            <h3>🥩 Receita Requintada: Filé ao Molho Madeira</h3>
-            <p>Um prato sofisticado para impressionar em ocasiões especiais.</p>
+            <div class="decoracao">☕</div>
+            <h3>☕ Café Gourmet</h3>
+            <p>Deguste uma seleção especial de cafés premium.</p>
             <ul>
-                <li>4 filés mignon</li>
-                <li>200ml de vinho Madeira</li>
-                <li>150g de champignon fatiado</li>
-                <li>1 colher de sopa de manteiga</li>
-                <li>1 dente de alho picado</li>
-                <li>Sal e pimenta do reino a gosto</li>
-                <li>2 colheres de sopa de farinha de trigo</li>
-                <li>1 xícara de caldo de carne</li>
+                <li>Café arábica</li>
+                <li>Notas frutadas</li>
+                <li>Moagem na hora</li>
             </ul>
-            <p><strong>Modo de preparo:</strong><br>
-            Tempere os filés com sal e pimenta. Sele em manteiga até dourar. Reserve. Na mesma panela, refogue o alho, acrescente champignon, farinha e misture. Adicione o vinho Madeira e o caldo de carne, mexa até engrossar. Volte os filés para o molho e sirva com purê de batatas.</p>
         </div>
 
         <div class="card-servico">
-            <h3>🎥 Aulas Online Exclusivas</h3>
-            <p>Aprenda do básico ao avançado com nossos vídeos passo a passo.</p>
+            <div class="decoracao">🥗</div>
+            <h3>🥗 Salada Mediterrânea</h3>
+            <p>Frescor e leveza em cada garfada.</p>
             <ul>
-                <li>Acesso vitalício aos cursos</li>
-                <li>Grupo exclusivo para dúvidas</li>
-                <li>Certificado ao final de cada módulo</li>
+                <li>Mix de folhas</li>
+                <li>Queijo feta</li>
+                <li>Azeitonas pretas</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <div class="decoracao">🍝</div>
+            <h3>🍝 Massa Artesanal</h3>
+            <p>Feita à mão com ingredientes frescos e amor.</p>
+            <ul>
+                <li>Fettuccine</li>
+                <li>Sugo de tomate rústico</li>
+                <li>Manjericão fresco</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <div class="decoracao">🍨</div>
+            <h3>🍨 Sobremesa Gelada</h3>
+            <p>Refrescante e sofisticada para dias especiais.</p>
+            <ul>
+                <li>Sorvete artesanal</li>
+                <li>Caldas variadas</li>
+                <li>Frutas da estação</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <div class="decoracao">✨</div>
+            <h3>✨ Workshop Presencial</h3>
+            <p>Participe das nossas aulas exclusivas e aprenda com chefs renomados.</p>
+            <ul>
+                <li>Apostila completa</li>
+                <li>Degustação no final</li>
+                <li>Certificado de participação</li>
             </ul>
         </div>
     </section>
 
-    <footer class="titulo">
+    <button class="botao-mais">Carregar Mais</button>
+
+    <footer>
         <h2 class="titulo-principal">Nossa Cozinha</h2>
         <p class="subtitulo">Com amor e sabor, Nossa Cozinha te ajuda a brilhar na cozinha!</p>
     </footer>
+
 </body>
 </html>
+
