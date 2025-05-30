@@ -13,16 +13,21 @@
             color: #2c003e;
         }
 
+        header {
+            background-color: #f3e6ff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
         header h1 {
             font-size: 36px;
             color: #4b0082;
-            margin-top: 30px;
+            margin-bottom: 10px;
         }
 
         header p {
             font-size: 18px;
-            color: #555;
-            margin-bottom: 40px;
+            color: #5a3a6f;
         }
 
         nav {
@@ -32,7 +37,6 @@
 
         nav button {
             background-color: #800080;
-            color: white;
             border: none;
             border-radius: 12px;
             padding: 10px 20px;
@@ -40,6 +44,15 @@
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s;
+        }
+
+        nav button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav button a:hover {
+            text-decoration: underline;
         }
 
         nav button:hover {
@@ -104,27 +117,11 @@
             opacity: 0.3;
         }
 
-        .botao-mais {
-            display: block;
-            margin: 30px auto;
-            background-color: #800080;
-            color: white;
-            border: none;
-            border-radius: 12px;
-            padding: 12px 25px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .botao-mais:hover {
-            background-color: #9932cc;
-        }
-
         footer {
-            margin-top: 50px;
+            background-color: #f3e6ff;
+            color: #4b0082;
+            padding: 30px;
             text-align: center;
-            color: #555;
         }
     </style>
 </head>
@@ -211,9 +208,41 @@
                 <li>Certificado de participação</li>
             </ul>
         </div>
-    </section>
 
-    <button class="botao-mais">Carregar Mais</button>
+        <!-- Novos cards adicionados -->
+        <div class="card-servico">
+            <div class="decoracao">🧁</div>
+            <h3>🧁 Cupcake de Baunilha</h3>
+            <p>Perfeitos para festas e encontros especiais.</p>
+            <ul>
+                <li>Massa leve de baunilha</li>
+                <li>Recheio de doce de leite</li>
+                <li>Cobertura com chantilly</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <div class="decoracao">🍕</div>
+            <h3>🍕 Pizza Caseira</h3>
+            <p>Feita no capricho com ingredientes frescos.</p>
+            <ul>
+                <li>Molho de tomate artesanal</li>
+                <li>Queijo mussarela</li>
+                <li>Orégano e azeite de oliva</li>
+            </ul>
+        </div>
+
+        <div class="card-servico">
+            <div class="decoracao">🥧</div>
+            <h3>🥧 Torta de Limão</h3>
+            <p>Equilíbrio entre o doce e o cítrico.</p>
+            <ul>
+                <li>Base crocante</li>
+                <li>Recheio cremoso de limão</li>
+                <li>Merengue dourado</li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
         <h2 class="titulo-principal">Nossa Cozinha</h2>
@@ -222,4 +251,5 @@
 
 </body>
 </html>
+
 
