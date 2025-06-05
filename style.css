@@ -178,3 +178,7 @@ nav button:hover {
     cursor: pointer;
 }
 
+nav a:visited {
+    color: #dda0dd;
+    text-decoration: none;
+}
