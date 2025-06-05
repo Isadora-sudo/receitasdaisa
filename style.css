@@ -182,3 +182,101 @@ nav a:visited {
     color: #dda0dd;
     text-decoration: none;
 }
+
+     /* Adicionando um fundo suave e espaçamentos entre as seções */
+     main.conteudo {
+        display: flex;
+        gap: 30px;
+        background-color: #f9e6f9; /* rosa esbranquiçado */
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(75, 0, 130, 0.2);
+    }
+    section.esquerda, section.centro, section.direita {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        color: #3a005a;
+        text-align: center;
+    }
+    section.esquerda img,
+    section.direita img,
+    section.centro iframe {
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 6px 10px rgba(75, 0, 130, 0.15);
+    }
+    /* Rodapé estilizado */
+    footer .rodape-estilizado {
+        background-color: #e6d6f4;
+        padding: 25px 0;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+        margin-top: 40px;
+    }
+    .rodape-titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        color: #4b0082;
+        margin: 0;
+    }
+    .rodape-subtitulo {
+        font-family: 'Dancing Script', cursive;
+        font-size: 32px;
+        color: #4b0082;
+        margin: 5px 0 0 0;
+    }
+
+         /* Adicionando um fundo suave e espaçamentos entre as seções */
+         main.conteudo {
+            display: flex;
+            gap: 30px;
+            background-color: #f9e6f9; /* rosa esbranquiçado */
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(75, 0, 130, 0.2);
+        }
+        section.esquerda, section.centro, section.direita {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            color: #3a005a;
+            text-align: center;
+        }
+        section.esquerda img,
+        section.direita img,
+        section.centro iframe {
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 6px 10px rgba(75, 0, 130, 0.15);
+        }
+        /* Rodapé estilizado */
+        footer .rodape-estilizado {
+            background-color: #e6d6f4;
+            padding: 25px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 40px;
+        }
+        .rodape-titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            color: #4b0082;
+            margin: 0;
+        }
+        .rodape-subtitulo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 32px;
+            color: #4b0082;
+            margin: 5px 0 0 0;
+        }
