@@ -1,255 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Serviços - Nossa Cozinha</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Receitas com Modo de Preparo</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #f9eaff, #e9d2ff);
+            font-family: Arial, sans-serif;
+            background: #fafafa;
             margin: 0;
-            padding: 0;
-            color: #2c003e;
+            padding: 20px;
+            color: #333;
         }
 
-        header {
-            background-color: #f3e6ff;
-            padding: 30px 20px;
+        h1 {
             text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-            color: #4b0082;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
-            color: #5a3a6f;
-        }
-
-        nav {
-            margin: 20px;
-            text-align: center;
-        }
-
-        nav button {
-            background-color: #800080;
-            border: none;
-            border-radius: 12px;
-            padding: 10px 20px;
-            margin: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        nav button a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav button a:hover {
-            text-decoration: underline;
-        }
-
-        nav button:hover {
-            background-color: #9932cc;
+            color: #5a2a82;
         }
 
         .servicos-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            padding: 30px;
-            background-color: #fceeff;
-            border-radius: 20px;
-            margin: 40px auto;
-            width: 90%;
-            box-shadow: 0 0 20px rgba(139, 0, 139, 0.2);
+            max-width: 1000px;
+            margin: 20px auto;
         }
 
         .card-servico {
             background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 280px;
             padding: 20px;
-            border-radius: 15px;
+            box-sizing: border-box;
             text-align: center;
-            color: #2c003e;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
+            transition: transform 0.2s ease;
         }
 
         .card-servico:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(139, 0, 139, 0.3);
-        }
-
-        .card-servico h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .card-servico p {
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
-
-        .card-servico ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            margin: 0 auto 10px;
-            max-width: 250px;
-        }
-
-        .card-servico li::before {
-            content: "🍽️ ";
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
         .decoracao {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            font-size: 24px;
-            opacity: 0.3;
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
-        footer {
-            background-color: #f3e6ff;
-            color: #4b0082;
-            padding: 30px;
-            text-align: center;
+        .card-servico h3 {
+            margin: 10px 0 8px;
+            color: #5a2a82;
+        }
+
+        .card-servico p {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-servico ul {
+            list-style-type: disc;
+            text-align: left;
+            padding-left: 20px;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .card-servico h4 {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #800080;
+            text-align: left;
+        }
+
+        .card-servico ol {
+            text-align: left;
+            max-width: 250px;
+            margin: 0 auto;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #444;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>✨ Nossos Serviços</h1>
-        <p>Mais do que receitas — oferecemos experiências completas!</p>
-    </header>
-
-    <nav>
-        <button><a href="index.html">Home</a></button>
-        <button><a href="empresa.html">A Empresa</a></button>
-        <button><a href="servicos.html">Serviços</a></button>
-        <button><a href="contatos.html">Contatos</a></button>
-        <button><a href="faleconosco.html">Fale Conosco</a></button>
-    </nav>
+    <h1>Receitas Deliciosas com Modo de Preparo</h1>
 
     <section class="servicos-wrapper">
+
         <div class="card-servico">
-            <div class="decoracao">🍰</div>
-            <h3>🍰 Bolo de Cenoura com Cobertura</h3>
-            <p>Clássico e irresistível para adoçar seus dias.</p>
+            <div class="decoracao">🍮</div>
+            <h3>🍮 Pudim de Leite Condensado</h3>
+            <p>Tradicional e irresistível.</p>
             <ul>
-                <li>3 cenouras médias</li>
-                <li>4 ovos</li>
-                <li>2 xícaras de açúcar</li>
-                <li>1/2 xícara de óleo</li>
-                <li>2 xícaras de farinha de trigo</li>
+                <li>1 lata de leite condensado</li>
+                <li>1 lata de leite</li>
+                <li>3 ovos</li>
+                <li>Açúcar para caramelizar</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Caramelize uma forma de pudim.</li>
+                <li>Bata os ingredientes no liquidificador.</li>
+                <li>Despeje na forma e asse em banho-maria por 1h.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">☕</div>
-            <h3>☕ Café Gourmet</h3>
-            <p>Deguste uma seleção especial de cafés premium.</p>
+            <div class="decoracao">🥞</div>
+            <h3>🥞 Panquecas Americanas</h3>
+            <p>Fofinhas e perfeitas para o pequeno-almoço.</p>
             <ul>
-                <li>Café arábica</li>
-                <li>Notas frutadas</li>
-                <li>Moagem na hora</li>
+                <li>1 xícara de leite</li>
+                <li>1 ovo</li>
+                <li>1 xícara de farinha de trigo</li>
+                <li>2 colheres de açúcar</li>
+                <li>1 colher de fermento</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Misture todos os ingredientes até formar uma massa.</li>
+                <li>Aqueça uma frigideira e despeje pequenas porções.</li>
+                <li>Doure dos dois lados e sirva com mel ou frutas.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">🥗</div>
-            <h3>🥗 Salada Mediterrânea</h3>
-            <p>Frescor e leveza em cada garfada.</p>
+            <div class="decoracao">🍩</div>
+            <h3>🍩 Donuts</h3>
+            <p>Clássicos americanos, agora na tua cozinha.</p>
             <ul>
-                <li>Mix de folhas</li>
-                <li>Queijo feta</li>
-                <li>Azeitonas pretas</li>
+                <li>2 xícaras de farinha</li>
+                <li>1 ovo</li>
+                <li>1/2 xícara de açúcar</li>
+                <li>1/2 xícara de leite</li>
+                <li>1 colher de fermento</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Misture todos os ingredientes até formar uma massa macia.</li>
+                <li>Modele os donuts e frite em óleo quente.</li>
+                <li>Depois de frios, cubra com chocolate ou açúcar.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">🍝</div>
-            <h3>🍝 Massa Artesanal</h3>
-            <p>Feita à mão com ingredientes frescos e amor.</p>
+            <div class="decoracao">🍛</div>
+            <h3>🍛 Arroz à Grega</h3>
+            <p>Colorido, leve e perfeito como acompanhamento.</p>
             <ul>
-                <li>Fettuccine</li>
-                <li>Sugo de tomate rústico</li>
-                <li>Manjericão fresco</li>
+                <li>2 xícaras de arroz cozido</li>
+                <li>1 cenoura ralada</li>
+                <li>1/2 pimentão vermelho picado</li>
+                <li>1/2 xícara de ervilhas</li>
+                <li>1/2 cebola picada</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Refogue a cebola, cenoura e pimentão até murchar.</li>
+                <li>Adicione as ervilhas e o arroz já cozido.</li>
+                <li>Mexa bem, ajuste o sal e sirva quente.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">🍨</div>
-            <h3>🍨 Sobremesa Gelada</h3>
-            <p>Refrescante e sofisticada para dias especiais.</p>
+            <div class="decoracao">🥘</div>
+            <h3>🥘 Escondidinho de Carne</h3>
+            <p>Camadas cremosas e recheio suculento.</p>
             <ul>
-                <li>Sorvete artesanal</li>
-                <li>Caldas variadas</li>
-                <li>Frutas da estação</li>
+                <li>500g de carne moída</li>
+                <li>1 kg de batata</li>
+                <li>1 cebola picada</li>
+                <li>2 colheres de manteiga</li>
+                <li>1/2 xícara de leite</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Cozinhe e amasse as batatas, fazendo um puré com leite e manteiga.</li>
+                <li>Refogue a carne com a cebola e tempere.</li>
+                <li>Em um refratário, coloque uma camada de puré, carne, e mais puré por cima. Leve ao forno até dourar.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">✨</div>
-            <h3>✨ Workshop Presencial</h3>
-            <p>Participe das nossas aulas exclusivas e aprenda com chefs renomados.</p>
+            <div class="decoracao">🍲</div>
+            <h3>🍲 Caldo Verde</h3>
+            <p>Tradição portuguesa com muito sabor.</p>
             <ul>
-                <li>Apostila completa</li>
-                <li>Degustação no final</li>
-                <li>Certificado de participação</li>
+                <li>4 batatas médias</li>
+                <li>1 linguiça calabresa</li>
+                <li>1 cebola</li>
+                <li>2 dentes de alho</li>
+                <li>1 maço de couve fatiada</li>
             </ul>
-        </div>
-
-        <!-- Novos cards adicionados -->
-        <div class="card-servico">
-            <div class="decoracao">🧁</div>
-            <h3>🧁 Cupcake de Baunilha</h3>
-            <p>Perfeitos para festas e encontros especiais.</p>
-            <ul>
-                <li>Massa leve de baunilha</li>
-                <li>Recheio de doce de leite</li>
-                <li>Cobertura com chantilly</li>
-            </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Cozinhe as batatas com cebola e alho. Bata no liquidificador.</li>
+                <li>Refogue a linguiça e junte ao creme de batatas.</li>
+                <li>Adicione a couve fatiada e deixe cozinhar por 5 minutos.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
-            <div class="decoracao">🍕</div>
-            <h3>🍕 Pizza Caseira</h3>
-            <p>Feita no capricho com ingredientes frescos.</p>
+            <div class="decoracao">🍗</div>
+            <h3>🍗 Frango Assado com Ervas</h3>
+            <p>Perfumado e suculento para toda a família.</p>
             <ul>
-                <li>Molho de tomate artesanal</li>
-                <li>Queijo mussarela</li>
-                <li>Orégano e azeite de oliva</li>
+                <li>1 frango inteiro</li>
+                <li>Suco de 1 limão</li>
+                <li>Alho, alecrim, tomilho e sal a gosto</li>
+                <li>1/2 xícara de azeite</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Tempere o frango com os ingredientes e deixe marinar por 2h.</li>
+                <li>Leve ao forno a 200°C por 1h30, regando com o próprio caldo.</li>
+            </ol>
         </div>
 
         <div class="card-servico">
             <div class="decoracao">🥧</div>
-            <h3>🥧 Torta de Limão</h3>
-            <p>Equilíbrio entre o doce e o cítrico.</p>
+            <h3>🥧 Quiche de Alho-Francês</h3>
+            <p>Elegância e sabor em cada fatia.</p>
             <ul>
-                <li>Base crocante</li>
-                <li>Recheio cremoso de limão</li>
-                <li>Merengue dourado</li>
+                <li>1 massa pronta para quiche</li>
+                <li>2 alhos-franceses fatiados</li>
+                <li>3 ovos</li>
+                <li>200ml de natas</li>
+                <li>Sal e noz-moscada</li>
             </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Refogue o alho-francês e reserve.</li>
+                <li>Misture ovos, natas, sal e noz-moscada.</li>
+                <li>Monte a quiche na massa e asse por 40 minutos a 180°C.</li>
+            </ol>
         </div>
-    </section>
 
-    <footer>
-        <h2 class="titulo-principal">Nossa Cozinha</h2>
-        <p class="subtitulo">Com amor e sabor, Nossa Cozinha te ajuda a brilhar na cozinha!</p>
-    </footer>
+        <div class="card-servico">
+            <div class="decoracao">🥮</div>
+            <h3>🥮 Pastel de Nata</h3>
+            <p>Doce típico português, crocante e cremoso.</p>
+            <ul>
+                <li>Massa folhada</li>
+                <li>6 gemas</li>
+                <li>500ml de leite</li>
+                <li>200g de açúcar</li>
+                <li>1 colher de sopa de farinha</li>
+            </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Aqueça o leite com o açúcar e farinha.</li>
+                <li>Junte as gemas e cozinhe até engrossar.</li>
+                <li>Despeje sobre a massa folhada em formas e leve ao forno até dourar.</li>
+            </ol>
+        </div>
+
+    </section>
 
 </body>
 </html>
+
 
 
